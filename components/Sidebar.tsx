@@ -25,9 +25,10 @@ const Sidebar = () => {
 
       {/* Download Resume */}
       <a
-        href=""
+        href="https://docs.google.com/document/d/e/2PACX-1vSxqBm9fMwZzJSZCVH0mps1b_-sHPNCgvjpNYvgyqzHxU-bQbBl98nUd8WJPr-ACRRB4OeqXLxIzqKW/pub"
+        target='_blank'
         className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-xl"
-        download="name"
+        download="https://docs.google.com/document/d/e/2PACX-1vSxqBm9fMwZzJSZCVH0mps1b_-sHPNCgvjpNYvgyqzHxU-bQbBl98nUd8WJPr-ACRRB4OeqXLxIzqKW/pub"
       >
         <FaUserTie className="w-6 h-6 py-1" />
         Download Resume
@@ -35,7 +36,7 @@ const Sidebar = () => {
 
       {/* Social Icons */}
       <div className="flex justify-around w-9/12 mx-auto my-5 text-blue-500 md:w-full">
-        <a href="">
+        <a href="https://www.linkedin.com/in/vlad-parkalau/" target='_blank'>
           <TiSocialLinkedinCircular className="cursor-pointer w-7 h-7" />
         </a>
         <a href="">

@@ -1,10 +1,15 @@
 
+
+import { IService, ISkill } from './type'
+import { IoLogoIonic } from 'react-icons/io';
+import { CgCPlusPlus } from 'react-icons/cg';
+import { BsCircleFill, BsFiletypeXml } from 'react-icons/bs'
+import { FaReact, FaNodeJs, FaGit, FaGithub, FaGitlab, FaAws, FaDocker, FaLinux, FaWindows, FaApple, FaCodeBranch, FaJira, FaGoogle } from 'react-icons/fa';
+import { DiMysql, DiRedis, DiMongodb, DiPostgresql, DiSymfonyBadge, DiDrupal, DiWordpress, DiPhp, DiRuby, DiJavascript1, DiPython, DiHtml5, DiCss3, DiDotnet, DiLaravel } from 'react-icons/di';
+import { SiApache, SiCakephp, SiKubernetes, SiNginx } from 'react-icons/si';
 import { RiBookLine, RiCodepenLine, RiComputerLine, RiDatabaseLine, RiToolsLine } from 'react-icons/ri'
 import { BiCodeAlt, BiLibrary } from 'react-icons/bi'
 import { GoDeviceDesktop } from 'react-icons/go'
-import { IService } from './type'
-
-
 
 export const services: IService[] = [
     {
@@ -49,4 +54,238 @@ export const services: IService[] = [
     },
 ];
 
+export const languages: ISkill[] = [
+    // Languages
+    {
+        name: 'PHP',
+        level: '85%',
+        Icon: DiPhp
+    },
+    {
+        name: 'JavaScript',
+        level: '95%',
+        Icon: DiJavascript1
+    },
+    {
+        name: 'Python',
+        level: '90%',
+        Icon: DiPython
+    },
+    {
+        name: 'Ruby',
+        level: '75%',
+        Icon: DiRuby
+    },
+    {
+        name: 'C#',
+        level: '90%',
+        Icon: DiDotnet
+    },
+    {
+        name: 'C/C++',
+        level: '80%',
+        Icon: CgCPlusPlus
+    }
+];
+
+export const databases: ISkill[] = [
+    // Databases
+    {
+        name: 'MySql',
+        level: '85%',
+        Icon: DiMysql
+    },
+    {
+        name: 'MariaDB',
+        level: '75%',
+        Icon: DiMysql
+    },
+    {
+        name: 'Redis',
+        level: '80%',
+        Icon: DiRedis
+    },
+    {
+        name: 'MongoDB',
+        level: '85%',
+        Icon: DiMongodb
+    },
+    {
+        name: 'PostgreSQL',
+        level: '90%',
+        Icon: DiPostgresql
+    }
+];
+
+export const frameworksAndLibraries: ISkill[] = [
+    // Frameworks and libraries
+    {
+        name: 'React',
+        level: '95%',
+        Icon: FaReact
+    },
+    {
+        name: 'React-native',
+        level: '85%',
+        Icon: FaReact
+    },
+    {
+        name: 'Laravel',
+        level: '85%',
+        Icon: DiLaravel
+    },
+    {
+        name: 'Node',
+        level: '65%',
+        Icon: FaNodeJs
+    },
+    {
+        name: 'Symfony',
+        level: '75%',
+        Icon: DiSymfonyBadge
+    },
+    {
+        name: 'Vue',
+        level: '60%',
+        Icon: BsCircleFill
+    },
+    {
+        name: 'JQuery',
+        level: '55%',
+        Icon: BsCircleFill
+    },
+    {
+        name: 'Ember',
+        level: '70%',
+        Icon: BsCircleFill
+    },
+    {
+        name: 'CodeIgniter',
+        level: '75%',
+        Icon: IoLogoIonic
+    },
+    {
+        name: 'Smarty',
+        level: '70%',
+        Icon: BiCodeAlt
+    },
+    {
+        name: '.NET',
+        level: '55%',
+        Icon: DiDotnet
+    },
+    {
+        name: 'HTML',
+        level: '85%',
+        Icon: DiHtml5
+    },
+    {
+        name: 'XML',
+        level: '40%',
+        Icon: BsFiletypeXml
+    },
+    {
+        name: 'CSS',
+        level: '45%',
+        Icon: DiCss3
+    },
+    {
+        name: 'Drupal',
+        level: '35%',
+        Icon: DiDrupal
+    },
+    {
+        name: 'Wordpress',
+        level: '40%',
+        Icon: DiWordpress
+    },
+    {
+        name: 'CakePHP',
+        level: '75%',
+        Icon: SiCakephp
+    }
+];
+
+export const devDeploymentTools: ISkill[] = [
+    // Development & Deployment Tools
+    {
+        name: 'GitHub',
+        level: '85%',
+        Icon: FaGithub
+    },
+    {
+        name: 'GitLab',
+        level: '80%',
+        Icon: FaGitlab
+    },
+    {
+        name: 'GIT',
+        level: '90%',
+        Icon: FaGit
+    },
+    {
+        name: 'SVN',
+        level: '55%',
+        Icon: FaCodeBranch
+    },
+    {
+        name: 'CI/CD',
+        level: '90%',
+        Icon: BsCircleFill
+    },
+    {
+        name: 'JIRA',
+        level: '75%',
+        Icon: FaJira
+    },
+    {
+        name: 'Apache',
+        level: '85%',
+        Icon: SiApache
+    },
+    {
+        name: 'Nginx',
+        level: '75%',
+        Icon: SiNginx
+    },
+    {
+        name: 'AWS',
+        level: '55%',
+        Icon: FaAws
+    },
+    {
+        name: 'GCP',
+        level: '45%',
+        Icon: FaGoogle
+    },
+    {
+        name: 'Kubernetes',
+        level: '45%',
+        Icon: SiKubernetes
+    },
+    {
+        name: 'Docker',
+        level: '47%',
+        Icon: FaDocker
+    }
+];
+
+export const operatingSystems: ISkill[] = [
+    // Operating Systems
+    {
+        name: 'Windows',
+        level: '75%',
+        Icon: FaWindows
+    },
+    {
+        name: 'Linux',
+        level: '76%',
+        Icon: FaLinux
+    },
+    {
+        name: 'MacOS',
+        level: '77%',
+        Icon: FaApple
+    }
+];
 

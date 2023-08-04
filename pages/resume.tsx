@@ -1,16 +1,11 @@
+import Bar from "@/components/Bar"
+import { languages, devDeploymentTools, databases, frameworksAndLibraries } from "@/data"
+
 const resume = () => {
   return (
-    <div className="p-4">
+    <div className="px-6 py-2">
       {/* education and exp */}
       <div className="grid md:grid-cols-2 gap-6">
-        <div>
-          <h5 className="my-3 text-2xl font-bold">Education</h5>
-          <div>
-            <h5 className="my-2 text-xl font-bold">Bachelor of Computer Science (2004 - 2008)</h5>
-            <p className="font-semibold">Belarusian State University of Informatics and Radioelectronics, Minsk, Belarus</p>
-            <p className="my-3"> </p>
-          </div>
-        </div>
         <div>
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
@@ -40,7 +35,7 @@ const resume = () => {
         </div>
         <div>
           <div>
-            <h5 className="my-2 text-xl font-bold">UBC OBER (<a href="https://biobanking.org/" title="biobanking.org" target="_blank">biobanking.org</a>) April 2017 - February 2021</h5>
+            <h5 className="my-2 text-xl font-bold">UBC OBER <a href="https://biobanking.org/" title="biobanking.org" target="_blank">Biobanking.org</a> April 2017 - February 2021</h5>
             <p className="font-semibold">WEB Developer</p>
             <ul className="my-3 list-disc">
               <li className="ml-6">Developing an operational database to store user's online biobank education research data from the Biobank Resource Centre (Laravel, PHP). </li>
@@ -65,7 +60,7 @@ const resume = () => {
         </div>
         <div>
           <div>
-            <h5 className="my-2 text-xl font-bold">Akavita – January 2012 to February 2013</h5>
+            <h5 className="my-2 text-xl font-bold">Akavita January 2012 to February 2013</h5>
             <p className="font-semibold">WEB Developer</p>
             <ul className="my-3 list-disc">
               <li className="ml-6">Developed a high-load (millions of users) social network portal for the Asian market.</li>
@@ -90,8 +85,55 @@ const resume = () => {
           </div>
         </div> */}
       </div>
+      <div className="grid md:grid-cols-1">
+        <div>
+          <h5 className="my-3 text-2xl font-bold">Education</h5>
+          <div>
+            <h5 className="my-2 text-xl font-bold">Bachelor of Computer Science (2004 - 2008)</h5>
+            <p className="font-semibold">Belarusian State University of Informatics and Radioelectronics, Minsk, Belarus</p>
+            <p className="my-3"> </p>
+          </div>
+        </div>
+      </div>
       {/* languages and tools */}
-
+      <div className="grid gap-4 md:grid-cols-2">
+        <div>
+          <h5 className="my-3 text-2xl font-bold">Languages & Frameworks</h5>
+          <div className="my-2">
+            {
+              languages.map(language => <Bar data={language} key={language.name} />)
+            }
+          </div>
+        </div>
+        {/* tools and software */}
+          <div>
+            <h5 className="my-3 text-2xl font-bold">Tools and Software</h5>
+            <div className="my-2">
+              {
+                devDeploymentTools.map(tool => <Bar data={tool} key={tool.name} />)
+              }
+            </div>
+          </div>
+        {/* databases */}
+          <div>
+            <h5 className="my-3 text-2xl font-bold">Databases</h5>
+            <div className="my-2">
+              {
+                databases.map(database => <Bar data={database} key={database.name} />)
+              }
+            </div>
+          </div>
+        
+        {/* frameworksAndLibraries */}
+          <div>
+            <h5 className="my-3 text-2xl font-bold">Frameworks and Libraries</h5>
+            <div className="my-2">
+              {
+                frameworksAndLibraries.map(frameworks => <Bar data={frameworks} key={frameworks.name} />)
+              }
+            </div>
+          </div>
+      </div>
     </div>
   )
 }
