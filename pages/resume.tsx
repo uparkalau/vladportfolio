@@ -38,7 +38,7 @@ const resume = () => {
             <h5 className="my-2 text-xl font-bold">UBC OBER <a href="https://biobanking.org/" title="biobanking.org" target="_blank">Biobanking.org</a> April 2017 - February 2021</h5>
             <p className="font-semibold">WEB Developer</p>
             <ul className="my-3 list-disc">
-              <li className="ml-6">Developing an operational database to store user's online biobank education research data from the Biobank Resource Centre (Laravel, PHP). </li>
+              <li className="ml-6">Developing an operational database to store user online biobank education research data from the Biobank Resource Centre (Laravel, PHP). </li>
               <li className="ml-6">Design, plan and implement computer simulation of research data (Python).</li>
               <li className="ml-6">Participate in laboratory meetings and present work for review.</li>
               <li className="ml-6">Responsibility for customizing and developing ATiM (PHP, CakePhp)</li>
