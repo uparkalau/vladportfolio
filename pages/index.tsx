@@ -1,9 +1,7 @@
 import { services } from '../data'
 import ServiceCard from '../components/ServiceCard'
-// import { GetServerSidePropsContext, GetStaticPropsContext } from 'next'
 
 const index = () => {
-  // console.log(services);
   
   return (
     <div className='flex flex-col flex-grow px-6 pt-1'>
@@ -14,14 +12,14 @@ const index = () => {
         projects and offers daily guidance to team members. Collaborates with the project team
         to develop, test, and implement software code.
       </h5>
-      <div className='flex-grow p-4 mt-5 bg-gray-400' style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}>
+      <div className='flex-grow p-4 mt-5' style={{ marginLeft: '-1.5rem', marginRight: '-1.5rem' }}>
         <h6 className='my-3 text-xl font-bold tracking-wide'>
-          Who I am? What I offer
+          What I offer
         </h6>
         <div className='grid gap-6 lg:grid-cols-2'>
           {
             services.map(service => (
-              <div key={service.title} className='bg-gray-200 rounded-lg lg:col-span-1'>
+              <div key={service.title} className='bg-gray-400 rounded-lg lg:col-span-1'>
                 <ServiceCard key={service.title} service={service} />
               </div>
 
