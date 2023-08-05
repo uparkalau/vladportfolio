@@ -12,6 +12,13 @@ export const theme = {
     colors: {
       blue: {
         DEFAULT: '#1e40af'
+      },
+      dark: {
+        DEFAULT: "#010101",
+        100: "#0a0b0e",
+        200: "#16181d",
+        300: "#16181d",
+        500: "#0f1115"
       }
     },
     // backgroundImage: {

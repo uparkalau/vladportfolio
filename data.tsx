@@ -1,6 +1,6 @@
 
 
-import { IService, ISkill } from './type'
+import { IProject, IService, ISkill } from './type'
 import { IoLogoIonic } from 'react-icons/io';
 import { CgCPlusPlus } from 'react-icons/cg';
 import { BsCircleFill, BsFiletypeXml } from 'react-icons/bs'
@@ -289,3 +289,32 @@ export const operatingSystems: ISkill[] = [
     }
 ];
 
+export const projects:IProject[] = [
+    {
+        name: "ToDo List",
+        decription: "This web page allow you to create , modify your ToDo's tasks",
+        image_path: '/images/ToDoList.png',
+        deployed_url: 'https://singular-nougat-74e7f3.netlify.app/',
+        github_url: 'https://github.com/uparkalau/mern-todo-client/',
+        category: ["node", "express", "react","mongo"],
+        key_techs: ["React", "Redux", "Bootstrap"]
+    },
+    {
+        name: "ToDo2 List2",
+        decription: "This web page allow you to create , modify your ToDo's tasks",
+        image_path: '/images/ToDoList.png',
+        deployed_url: 'https://singular-nougat-74e7f3.netlify.app/',
+        github_url: 'https://github.com/uparkalau/mern-todo-client/',
+        category: ["react","mongo"],
+        key_techs: ["Bootstrap"]
+    },
+    {
+        name: "ToDo3 List3",
+        decription: "This web page allow you to create , modify your ToDo's tasks",
+        image_path: '/images/ToDoList.png',
+        deployed_url: 'https://singular-nougat-74e7f3.netlify.app/',
+        github_url: 'https://github.com/uparkalau/mern-todo-client/',
+        category: ["node", "mongo"],
+        key_techs: ["Redux", "Bootstrap"]
+    },
+]
