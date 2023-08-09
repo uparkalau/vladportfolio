@@ -1,5 +1,7 @@
 import { services } from '../data'
 import ServiceCard from '../components/ServiceCard'
+import { motion } from 'framer-motion'
+import { fadeInUp } from '@/animations'
 
 const index = () => {
   
@@ -16,17 +18,23 @@ const index = () => {
         <h6 className='my-3 text-xl font-bold tracking-wide'>
           What I offer
         </h6>
-        <div className='grid gap-6 lg:grid-cols-2'>
+        <motion.div 
+          className='grid gap-6 my-3 lg:grid-cols-2'
+        >
           {
             services.map(service => (
-              <div key={service.title} className='bg-gray-400 rounded-lg lg:col-span-1'>
+              <motion.div 
+                variants={fadeInUp} 
+                initial="initial" 
+                animate="animate" 
+                key={service.title} 
+                className='bg-gray-400 rounded-lg lg:col-span-1'
+              >
                 <ServiceCard key={service.title} service={service} />
-              </div>
-
-              
+              </motion.div>
             ))
           }
-        </div>
+        </motion.div>
       </div>
     </div>
   )

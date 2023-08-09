@@ -18,7 +18,11 @@ const Sidebar = () => {
       <Image
         src={avatar}
         alt="my avatar"
-        className="w-32 h-32 mx-auto rounded-xl"
+        className="mx-auto rounded-xl"
+        height={128}
+        width={128}
+        layout='intrinsic'
+        quality={100}
       />
 
       {/* Name */}

@@ -1,12 +1,14 @@
 import Bar from "@/components/Bar"
 import { languages, devDeploymentTools, databases, frameworksAndLibraries } from "@/data"
-
+import { motion } from 'framer-motion'
+import { fadeInUp } from "@/animations"
 const resume = () => {
+
   return (
     <div className="px-6 py-2">
       {/* education and exp */}
-      <div className="grid md:grid-cols-2 gap-6">
-        <div>
+      <div className="grid gap-6 md:grid-cols-2">
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <h5 className="my-3 text-2xl font-bold">Experience</h5>
           <div>
             <h5 className="my-2 text-xl font-bold">MindGeek: January 2023 -  April 2023</h5>
@@ -19,8 +21,8 @@ const resume = () => {
               <li className="ml-6">Conducted server-side resource profiling, optimization, and debugging in a UNIX/Linux environment.</li>
             </ul>
           </div>
-        </div>
-        <div>
+        </motion.div>
+        <motion.div variants={fadeInUp} initial="initial" animate="animate">
           <div>
             <h5 className="my-2 text-xl font-bold">MolecularYou February 2021 -  July 2022</h5>
             <p className="font-semibold">Software Engeneer</p>
@@ -32,7 +34,7 @@ const resume = () => {
               <li className="ml-6">Made use of continuous integration and deployment (GitHub, AWS, GitHub Actions)</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
         <div>
           <div>
             <h5 className="my-2 text-xl font-bold">UBC OBER <a href="https://biobanking.org/" title="biobanking.org" target="_blank">Biobanking.org</a> April 2017 - February 2021</h5>
