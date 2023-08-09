@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons'
 
-export interface IService{
+export interface IService {
     title: string
     description: string
     Icon: IconType
@@ -22,4 +22,4 @@ export interface IProject {
     key_techs: string[]
 }
 
-export type Category = "react" | "node" | "express" | "python" | "PHP" | "mongo";
+export type Category = 'react' | 'node' | 'express' | 'python' | 'PHP' | 'mongo'
