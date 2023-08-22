@@ -1,6 +1,6 @@
 import { ISkill } from '@/type'
 import { FunctionComponent } from 'react'
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 
 const Bar: FunctionComponent<{ data: ISkill }> = ({
     data: { Icon, level, name },
@@ -22,16 +22,21 @@ const Bar: FunctionComponent<{ data: ISkill }> = ({
     }
     return (
         <div className="my-2 text-white bg-gray-300 rounded-full">
-            <motion.div
+            {/* <motion.div
                 className="flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-blue-300 to-blue-600"
                 style={{ width: bar_width }}
                 variants={variants}
                 initial="initial"
                 animate="animate"
+            > */}
+            <div
+                className="px-4 py-1 flex items-center rounded-full bg-gradient-to-r from-blue-300 to-blue-600"
+                style={{ width: level }}
             >
                 <Icon className="mr-3" />
                 {name}
-            </motion.div>
+            </div>
+            {/* </motion.div> */}
         </div>
     )
 }
