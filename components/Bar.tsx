@@ -1,6 +1,6 @@
+import { motion } from 'framer-motion'
 import { ISkill } from '@/type'
 import { FunctionComponent } from 'react'
-import { motion } from 'framer-motion'
 
 const Bar: FunctionComponent<{ data: ISkill }> = ({
     data: { Icon, level, name },
