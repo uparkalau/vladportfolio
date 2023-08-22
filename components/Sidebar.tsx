@@ -1,3 +1,4 @@
+import React from 'react'
 import { VscGithub } from 'react-icons/vsc'
 import { TiSocialLinkedinCircular } from 'react-icons/ti'
 import { GoLocation } from 'react-icons/go'
@@ -6,8 +7,9 @@ import Image from 'next/legacy/image'
 import avatar from '../public/avatar.jpg'
 import { useTheme } from 'next-themes'
 
-const Sidebar = () => {
+const Sidebar: React.FC = () => {
     const { theme, setTheme } = useTheme()
+
     const changeTheme = () => {
         setTheme(theme === 'light' ? 'dark' : 'light')
     }
@@ -39,8 +41,9 @@ const Sidebar = () => {
             <a
                 href="https://docs.google.com/document/d/e/2PACX-1vSxqBm9fMwZzJSZCVH0mps1b_-sHPNCgvjpNYvgyqzHxU-bQbBl98nUd8WJPr-ACRRB4OeqXLxIzqKW/pub"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center px-2 py-1 my-3 bg-gray-400 rounded-xl"
-                download="https://docs.google.com/document/d/e/2PACX-1vSxqBm9fMwZzJSZCVH0mps1b_-sHPNCgvjpNYvgyqzHxU-bQbBl98nUd8WJPr-ACRRB4OeqXLxIzqKW/pub"
+                download="resume.pdf"
             >
                 <FaUserTie className="w-6 h-6 py-1" />
                 Download Resume
@@ -51,10 +54,15 @@ const Sidebar = () => {
                 <a
                     href="https://www.linkedin.com/in/vlad-parkalau/"
                     target="_blank"
+                    rel="noopener noreferrer"
                 >
                     <TiSocialLinkedinCircular className="cursor-pointer w-7 h-7" />
                 </a>
-                <a href="">
+                <a
+                    href="https://github.com/uparkalau"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <VscGithub className="cursor-pointer w-7 h-7" />
                 </a>
             </div>
@@ -83,7 +91,7 @@ const Sidebar = () => {
                 onClick={changeTheme}
                 className="w-8/12 px-5 py-2 text-white rounded-xl bg-gradient-to-l from-blue-300 to-blue-600"
             >
-                Toggle Theme
+                Switch Theme
             </button>
         </div>
     )

@@ -1,14 +1,12 @@
-import { IProject } from '@/type'
 import { FunctionComponent, useState } from 'react'
 import Image from 'next/legacy/image'
 import { AiFillGithub, AiFillProject } from 'react-icons/ai'
 import { MdClose } from 'react-icons/md'
 import { motion } from 'framer-motion'
 import { fadeInUp } from '@/animations'
+import { IProject } from '@/type'
 
-const ProjectCard: FunctionComponent<{
-    project: IProject
-}> = ({
+const ProjectCard: FunctionComponent<{ project: IProject }> = ({
     project: {
         name,
         image_path,

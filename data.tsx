@@ -1,4 +1,12 @@
-import { IProject, IService, ISkill } from './type'
+import {
+    IProject,
+    IService,
+    ISkill,
+    Category,
+    Experience,
+    Education,
+    Language,
+} from './type'
 import { IoLogoIonic } from 'react-icons/io'
 import { CgCPlusPlus } from 'react-icons/cg'
 import { BsCircleFill, BsFiletypeXml } from 'react-icons/bs'
@@ -44,6 +52,77 @@ import {
 } from 'react-icons/ri'
 import { BiCodeAlt, BiLibrary } from 'react-icons/bi'
 import { GoDeviceDesktop } from 'react-icons/go'
+
+export const educations: Education[] = [
+    {
+        degree: 'Bachelor of Computer Science',
+        institution:
+            'Belarusian State University of Informatics and Radioelectronics, Minsk, Belarus',
+        date: ' (2004 - 2008)',
+    },
+]
+
+export const experiences: Experience[] = [
+    {
+        company: 'MindGeek',
+        date: 'January 2023 - April 2023',
+        role: 'Software Developer',
+        tasks: [
+            'Collaborated with a team to maintain complex business problems and big data involving millions of participants.',
+            'Writing, testing and debugging code (PHP)',
+            'Worked closely with project teams to address data and computing challenges in high traffic online environments.',
+            'Optimized and managed large databases for performance (MYSQL, NoSQL)',
+            'Conducted server-side resource profiling, optimization, and debugging in a UNIX/Linux environment.',
+        ],
+    },
+    {
+        company: 'MolecularYou',
+        date: 'February 2021 - July 2022',
+        role: 'Software Engineer',
+        tasks: [
+            'Writing, testing and debugging front-end, back-end code that works across multiple browsers and cross platforms (tablets, desktops, mobile) (Ruby, React)',
+            'Creating web services like REST API for front-end mobile application (Ruby on rails)',
+            'Design, write, modify, integrate, and test front-end code, prototyping components and navigation structure for mobile application (react-native, figma)',
+            'Using GitHub to update and deploy code. (Kubernetes, Docker)',
+            'Made use of continuous integration and deployment (GitHub, AWS, GitHub Actions)',
+        ],
+    },
+    {
+        company: 'UBC OBER - Biobanking.org',
+        date: 'April 2017 - February 2021',
+        role: 'WEB Developer',
+        tasks: [
+            'Developing an operational database to store user online biobank education research data from the Biobank Resource Centre (Laravel, PHP).',
+            'Design, plan and implement computer simulation of research data (Python).',
+            'Participate in laboratory meetings and present work for review.',
+            'Responsibility for customizing and developing ATiM (PHP, CakePhp)',
+        ],
+    },
+    {
+        company: 'Spritecs - Actamedical.com',
+        date: 'February 2013 to August 2016',
+        role: 'WEB Developer',
+        tasks: [
+            'Planned, architected, developed and maintained high-load systems.',
+            'Developing a Sales / CRM software tech stack using CodeIgniter, MySQL, Smarty.',
+            'Worked on client (JavaScript, jQuery), server (PHP, NGINX) and database (MariaDB)',
+            'Created a friendly interface with advanced search, data structuring, information sharing, personalization capabilities and analytics areas.',
+            'Successfully diagnosed, troubleshoot and resolve client issues',
+        ],
+    },
+    {
+        company: 'Akavita',
+        date: 'January 2012 to February 2013',
+        role: 'WEB Developer',
+        tasks: [
+            'Developed a high-load (millions of users) social network portal for the Asian market.',
+            'Created and supported news and contact modules. (Node, Ember)',
+            'Handled a complex environment with multiple server-side languages (PHP, NodeJS) and databases (MySQL, Redis).',
+            'Developed client-side code based on Ember.js MVC framework.',
+            'Using Javascript, CoffeeScript, JQuery in a high availability environment',
+        ],
+    },
+]
 
 export const services: IService[] = [
     {
@@ -96,7 +175,7 @@ export const services: IService[] = [
     },
 ]
 
-export const languages: ISkill[] = [
+export const languages: Language[] = [
     // Languages
     {
         name: 'PHP',
@@ -362,4 +441,13 @@ export const projects: IProject[] = [
         category: ['node', 'mongo'],
         key_techs: ['Redux', 'Bootstrap'],
     },
+]
+
+export const categoryValues: Category[] = [
+    'react',
+    'node',
+    'express',
+    'python',
+    'PHP',
+    'mongo',
 ]

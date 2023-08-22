@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 const navigationItems = [
     { name: 'About', route: '/' },
-    // { name: "Projects", route: "/projects" },
+    // { name: 'Projects', route: '/projects' },
     { name: 'Resume', route: '/resume' },
 ]
 

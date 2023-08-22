@@ -1,14 +1,15 @@
+import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { fadeInUp } from '@/animations'
 import ProjectCard from '@/components/ProjectCard'
 import ProjectsNavbar from '@/components/ProjectsNavbar'
 import { projects as projectsData } from '@/data'
-import { Category } from '@/type'
-import { motion } from 'framer-motion'
-import { useState } from 'react'
+import { Category, IProject } from '@/type'
 
-const Projects = () => {
-    const [projects, setProjects] = useState(projectsData)
-    const [active, setActive] = useState('all')
+const Projects: React.FC = () => {
+    const [projects, setProjects] = useState<IProject[]>(projectsData)
+    const [active, setActive] = useState<Category | 'all'>('all')
+
     const handleFilterCategory = (category: Category | 'all') => {
         if (category === 'all') {
             setProjects(projectsData)

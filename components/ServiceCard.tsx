@@ -1,14 +1,12 @@
-import { IService } from '@/type'
 import { FunctionComponent } from 'react'
+import { IService } from '@/type'
 
 const ServiceCard: FunctionComponent<{ service: IService }> = ({
     service: { Icon, description, title },
 }) => {
-    const createMarkup = () => {
-        return {
-            __html: description,
-        }
-    }
+    const createMarkup = () => ({
+        __html: description,
+    })
 
     return (
         <div className="flex items-center p-2 space-x-4">

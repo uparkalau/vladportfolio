@@ -3,7 +3,7 @@ import ServiceCard from '../components/ServiceCard'
 import { motion } from 'framer-motion'
 import { fadeInUp } from '@/animations'
 
-const index = () => {
+const Index: React.FC = () => {
     return (
         <div className="flex flex-col flex-grow px-6 pt-1">
             <h5 className="my-3 font-medium">
@@ -45,4 +45,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
