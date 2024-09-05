@@ -54,4 +54,20 @@ export interface LanguagesToolsSectionProps {
     title: string
 }
 
-export type Category = 'react' | 'node' | 'express' | 'python' | 'PHP' | 'mongo'
+export type Category =
+    | 'react'
+    | 'node'
+    | 'express'
+    | 'python'
+    | 'PHP'
+    | 'ruby'
+    | 'mobile'
+    | 'php'
+    | 'mysql'
+    | 'bootstrap'
+    | 'wordpress'
+    | 'jquery'
+    | 'react-native'
+    | 'lamp'
+    | 'javascript'
+    | 'drupal'
