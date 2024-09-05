@@ -64,6 +64,29 @@ export const educations: Education[] = [
 
 export const experiences: Experience[] = [
     {
+        company: 'Bluewave Labs',
+        date: 'April 2024 - Present',
+        role: 'Team Lead / Full Stack Engineer',
+        tasks: [
+            'Leading a team of 6 developers in the development of an onboarding application.',
+            'Utilizing a tech stack PostgreSQL, Express.js, React, and Node.js (PERN).',
+            'Managing version control and collaboration through GitHub.',
+            'Coordinating tasks and sprints, ensuring timely delivery of features.',
+            'Conducting code reviews and maintaining high standards of code quality.',
+        ],
+    },
+    {
+        company: 'Freelance',
+        date: 'May 2023 - March 2024',
+        role: 'WordPress Developer',
+        tasks: [
+            'Lead platform development and launched two WordPress websites: stoneroadins.com and precisioncontractinginc.com.',
+            'Customized themes and plugins to meet client requirements.',
+            'Optimized websites for SEO and improved load times.',
+            'Managed client communication and gathered requirements.',
+        ],
+    },
+    {
         company: 'MindGeek',
         date: 'January 2023 - April 2023',
         role: 'Software Developer',
@@ -87,6 +110,7 @@ export const experiences: Experience[] = [
             'Made use of continuous integration and deployment (GitHub, AWS, GitHub Actions)',
         ],
     },
+
     {
         company: 'UBC OBER - Biobanking.org',
         date: 'April 2017 - February 2021',
@@ -120,6 +144,17 @@ export const experiences: Experience[] = [
             'Handled a complex environment with multiple server-side languages (PHP, NodeJS) and databases (MySQL, Redis).',
             'Developed client-side code based on Ember.js MVC framework.',
             'Using Javascript, CoffeeScript, JQuery in a high availability environment',
+        ],
+    },
+    {
+        company: 'LINEV Systems',
+        date: 'September 2007 - August 2011',
+        role: 'QA Automation Engineer',
+        tasks: [
+            'Worked for the production of X-Ray Medical Systems & Security Systems (Advin.by).',
+            'Assisted in the development of applications, developed and maintained automated test scripts using C# and .NET for applications, improving test efficiency.',
+            'Collaborated with cross-functional teams.',
+            'Contributed to continuous integration and delivery processes by integrating automated tests into the build pipeline.',
         ],
     },
 ]
@@ -412,42 +447,79 @@ export const operatingSystems: ISkill[] = [
 
 export const projects: IProject[] = [
     {
-        name: 'ToDo List',
-        decription:
-            "This web page allow you to create , modify your ToDo's tasks",
-        image_path: '/images/ToDoList.png',
-        deployed_url: 'https://singular-nougat-74e7f3.netlify.app/',
-        github_url: 'https://github.com/uparkalau/mern-todo-client/',
-        category: ['node', 'express', 'react', 'mongo'],
-        key_techs: ['React', 'Redux', 'Bootstrap'],
+        name: 'MolecularYou',
+        decription: 'A web portal for personalized health insights.',
+        image_path: '/images/MolecularYou.png',
+        deployed_url: 'https://www.molecularyou.com/',
+        github_url: 'https://github.com/uparkalau?tab=repositories',
+        category: ['react-native', 'react', 'ruby', 'mobile'],
+        key_techs: ['React-native', 'Ruby', 'React'],
     },
     {
-        name: 'ToDo2 List2',
-        decription:
-            "This web page allow you to create , modify your ToDo's tasks",
-        image_path: '/images/ToDoList.png',
-        deployed_url: 'https://singular-nougat-74e7f3.netlify.app/',
-        github_url: 'https://github.com/uparkalau/mern-todo-client/',
-        category: ['react', 'mongo'],
-        key_techs: ['Bootstrap'],
+        name: 'Precision Contracting Inc.',
+        decription: 'A WordPress site for an insurance company.',
+        image_path: '/images/PrecisionContracting.png',
+        deployed_url: 'https://precisioncontractinginc.com/',
+        github_url: 'https://github.com/uparkalau?tab=repositories',
+        category: ['wordpress', 'php', 'mysql', 'jquery'],
+        key_techs: ['WordPress', 'PHP', 'MySQL', 'JQuery'],
     },
     {
-        name: 'ToDo3 List3',
-        decription:
-            "This web page allow you to create , modify your ToDo's tasks",
-        image_path: '/images/ToDoList.png',
-        deployed_url: 'https://singular-nougat-74e7f3.netlify.app/',
-        github_url: 'https://github.com/uparkalau/mern-todo-client/',
-        category: ['node', 'mongo'],
-        key_techs: ['Redux', 'Bootstrap'],
+        name: 'Stone Road Insurance',
+        decription: 'A WordPress site for an insurance company.',
+        image_path: '/images/StoneRoadInsurance.png',
+        deployed_url: 'https://stoneroadins.com/',
+        github_url: 'https://github.com/uparkalau?tab=repositories',
+        category: ['wordpress', 'php', 'bootstrap'],
+        key_techs: ['WordPress', 'PHP', 'Bootstrap'],
+    },
+    {
+        name: 'ActaMedical',
+        decription: 'A high-load system for medical sales and CRM.',
+        image_path: '/images/ActaMedical.png',
+        deployed_url: 'https://www.actamedical.com/',
+        github_url: 'https://github.com/uparkalau?tab=repositories',
+        category: ['php', 'lamp', 'mysql', 'jquery', 'javascript', 'node'],
+        key_techs: ['PHP', 'LAMP', 'MySQL', 'JQuery', 'JavaScript'],
+    },
+    {
+        name: 'BCCRC',
+        decription: 'Internal project for IT department Invoicing CMS.',
+        image_path: '/images/BCCRC.png',
+        deployed_url: 'https://www.bccrc.ca/',
+        github_url: 'https://github.com/uparkalau?tab=repositories',
+        category: ['php', 'drupal', 'javascript'],
+        key_techs: ['PHP', 'Drupal', 'JavaScript'],
+    },
+    {
+        name: 'PathLab Biobanking',
+        decription: 'A Pathology Laboratory portal for researchers.',
+        image_path: '/images/PathLabBiobanking.png',
+        deployed_url: 'https://pathlab.biobanking.org/',
+        github_url: 'https://github.com/uparkalau?tab=repositories',
+        category: ['php', 'mysql', 'bootstrap'],
+        key_techs: ['PHP', 'MySQL', 'Bootstrap 3'],
+    },
+    {
+        name: 'Biobanking Signup',
+        decription: 'A education/certification portal for biobanking.',
+        image_path: '/images/BiobankingSignup.png',
+        deployed_url: 'https://biobanking.org/webs/signup',
+        github_url: 'https://github.com/uparkalau?tab=repositories',
+        category: ['php', 'mysql', 'bootstrap', 'python', 'node'],
+        key_techs: ['PHP', 'MySQL', 'Bootstrap 3'],
     },
 ]
 
 export const categoryValues: Category[] = [
     'react',
     'node',
-    'express',
     'python',
-    'PHP',
-    'mongo',
+    'php',
+    'mysql',
+    'wordpress',
+    'bootstrap',
+    'drupal',
+    'mobile',
+    'javascript',
 ]
